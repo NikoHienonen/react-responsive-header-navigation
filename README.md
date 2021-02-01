@@ -18,7 +18,6 @@ import HeaderNavigation from 'react-responsive-header-navigation'
 ## Available props
 
 ```
-
 logo: SVGElement | JSX.Element;
 
 menuLinks: NavigationLink[];
