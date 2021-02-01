@@ -11,7 +11,7 @@ Run the following command to install this package:
 You can now import `react-responsive-header-navigation` like so:
 
 ```
-import HeaderNavigation from 'react-responsive-header-navigation'
+import { HeaderNavigation } from 'react-responsive-header-navigation'
 ...
 ```
 
