@@ -1,14 +1,16 @@
 {
   "name": "react-responsive-header-navigation",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "React header component with navigation",
   "main": "build/index.js",
+  "types": "build/index.d.ts",
   "module": "build/index.es.js",
   "files": [
     "build"
   ],
   "scripts": {
     "build": "rollup -c",
+    "prepublish": "tsc",
     "test": "jest"
   },
   "repository": {
