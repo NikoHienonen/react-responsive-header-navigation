@@ -1,0 +1,165 @@
+.nav-container {
+  width: 100%;
+}
+/*
+.nav-container * {
+  border: red 1px solid;
+}
+*/
+nav {
+  display: flex;
+  flex-direction: row;
+}
+
+a {
+  color: white;
+  transition: all .2s ease-in-out; 
+  text-decoration: none;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+
+.active {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 130px;
+  width: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.logo-link {
+  justify-self: start;
+  margin-left: 80px;
+}
+
+.logo-link > * {
+  max-height: 130px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  text-align: center;
+  width: 50%;
+  font-family: var(--font1);
+  font-size: 1.2rem;
+  margin: 0 auto; 
+  justify-self: start;
+}
+
+.socials-menu {
+  display: flex;
+  flex-direction: row;
+  justify-self: flex-end;
+  list-style: none;
+  text-align: center;
+}
+
+.socials-menu > a {
+  margin: 1rem;
+  padding: 0.5rem;
+  border:2px solid white;    
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+
+}
+.socials-menu > a > i {
+  font-size: 1.2rem;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 25%;
+  right: 5%;
+  z-index: 1000;
+  display: none;
+}
+
+.menu-toggle .horizontal-bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+  display: block;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-container {
+    position: relative;
+    background: var(--dark-grey);
+    height: 70px;
+  }
+
+  .menu-container {
+    background: var(--black);
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    height: auto;
+  }
+
+  .menu-container {
+    display: none;
+    flex-direction: column;
+    left: -100%;
+    transition: all 0.5s ease;
+  }
+
+  .logo-link {
+    margin: 0 auto;    
+  }
+
+  .logo-link > * {
+    max-height: 70px;
+  }
+
+  .menu-container.open {
+    background: var(--black);
+    left: 0;
+    opacity: 1;
+    display: flex;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-menu a.nav-link {
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid #686767;
+  }
+
+  .socials-menu {
+    margin-top: 1rem;
+  }
+
+  .socials-menu a {
+    width: auto;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
