@@ -1,8 +1,9 @@
 {
   "name": "react-responsive-header-navigation",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React header component with navigation",
   "main": "lib/index.ts",
+  "type": "module",
   "scripts": {
     "build": "webpack",
     "test": "jest"
