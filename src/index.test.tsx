@@ -1,4 +1,4 @@
-import HeaderNavigation from "./index";
+import HeaderNavigation from "./HeaderNavigation";
 
 describe("HeaderNavigation", () => {
   it("is truthy", () => {
